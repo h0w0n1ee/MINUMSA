@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>민음사</title>
+  <!-- 0. 파비콘 -->
+  <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+
+  <!-- css -->
+      <!-- 초기화 -->
+      <link rel="stylesheet" href="./css/reset.css" type="text/css">
+      <!-- 공통서식 -->
+      <link rel="stylesheet" href="./css/common.css" type="text/css">
+      <!-- 레이아웃 -->
+          <!-- 모바일 -->
+      <link rel="stylesheet" href="./css/mobile.css" type="text/css">
+          <!-- 태블릿 -->
+      <link rel="stylesheet" href="./css/tablet.css" type="text/css">
+          <!-- PC -->
+      <link rel="stylesheet" href="./css/pc.css" type="text/css">
+
+  <!-- 라이브러리 -->
+      <!-- 폰트어썸 -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+</head>
+<body>
+  <!-- 헤더 -->
+  <header>
+    <h1>
+      <a href="index.html" title="메인페이지로 바로가기">
+        <img src="./img/minumsa_logo.png" alt="상단로고">
+      </a>
+    </h1>
+
+    <!-- ★ 모바일 버전에서 나오는 토글버튼 (햄버거) -->
+      <div id="toggle">
+        <span>&nbsp;</span>
+        <span>&nbsp;</span>
+        <span>&nbsp;</span>
+      </div>
+
+
+    <!-- 메인메뉴 -->
+    <nav class="gnb">
+      <ul>
+        <li> <!-- 민음사 -->
+          <a href="#" title="민음사">민음사<i class="fas fa-angle-down"></i></a>
+          <ul class="sub">
+            <li><a href="#" title="민음사">민음사</a></li>
+            <li><a href="#" title="채용정보">채용정보</a></li>
+            <li><a href="#" title="거래처">거래처</a></li>
+            <li><a href="#" title="오시는길">오시는길</a></li>
+          </ul>
+        </li>
+
+        <li> <!-- 도서 -->
+          <a href="#" title="도 서">도 서<i class="fas fa-angle-down"></i></a>
+          <ul class="sub">
+            <li><a href="#" title="전체도서">전체도서</a></li>
+            <li><a href="#" title="베스트셀러">베스트셀러</a></li>
+            <li><a href="#" title="전자책">전자책</a></li>
+            <li><a href="#" title="북캐스트">북캐스트</a></li>
+          </ul>
+        </li>
+
+        <li> <!-- 문학상 -->
+          <a href="#" title="문학상">문학상<i class="fas fa-angle-down"></i></a>
+          <ul class="sub">
+            <li><a href="#" title="오늘의작가상">오늘의 작가상</a></li>
+            <li><a href="#" title="김수영문학상">김수영 문학상</a></li>
+          </ul>
+        </li>
+
+        <li> <!-- 이벤트 -->
+          <a href="#" title="이벤트">이벤트<i class="fas fa-angle-down"></i></a>
+          <ul class="sub">
+            <li><a href="#" title="동네서점">동네서점</a></li>
+            <li><a href="#" title="패밀리데이">패밀리데이</a></li>
+            <li><a href="#" title="e스템프">e스템프</a></li>
+            <li><a href="#" title="행사스케치">행사스케치</a></li>
+          </ul>
+        </li>
+
+        <li> <!-- 멤버십 -->
+          <a href="#" title="멤버십">멤버십<i class="fas fa-angle-down"></i></a>
+          <ul class="sub">
+            <li><a href="#" title="멤버십안내">멤버십안내</a></li>
+            <li><a href="#" title="민음북클럽">민음북클럽</a></li>
+            <li><a href="#" title="정기구독">정기구독</a></li>
+            <li><a href="#" title="민음커뮤니티">민음커뮤니티</a></li>
+            <li><a href="#" title="독서모임">독서모임</a></li>
+          </ul>
+        </li>
+
+        <li> <!-- 소식 -->
+          <a href="#" title="소 식">소 식<i class="fas fa-angle-down"></i></a>
+          <ul class="sub">
+            <li><a href="#" title="공지">공지</a></li>
+            <li><a href="#" title="자료실">자료실</a></li>
+            <li><a href="#" title="문의">문의</a></li>
+          </ul>
+        </li>
+        
+        <li> <!-- 북샵 -->
+          <a href="#" title="북 샵">북 샵</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- 로그인/회원가입 (lnb) -->
+    <nav class="lnb">
+      <ul>
+        <li><a href="#" title="로그인" class="lnb_login">로그인</a></li>
+        <li><a href="#" title="회원가입" class="lnb_join">회원가입</a></li>
+      </ul>
+    </nav>
+
+    <!-- 검색폼 -->
+    <fieldset>
+      <!-- 검색폼 닫기 버튼 -->
+      <label for="sear_btn" class="src_close_btn"><i class="fa-solid fa-xmark"></i></label>
+
+      <input type="search" id="sear_btn" placeholder="검색어를 입력하세요">
+      <a href="#" title="검색">
+        <label for="sear_btn" class="fas fa-search"><span>검색버튼</span></label>
+      </a>
+    </fieldset>
+  </header>
+  
+
+
+  <!-- 메인 -->
+  <main>
+    <!-- 1. 메인슬라이드 -->
+    <article class="visual">
+      <h2>메인슬라이드</h2>
+      <div class="slide1">
+        <p>쓰는 존재와 읽는 당신 사이 ,<br><span>삶의 틈을 문학으로 채우다</span></p>
+        <img src="./img/litterbook.png" alt="메인이미지1" class="slide1_book">
+        <img src="./img/text.png" alt="메인이미지1_2" class="slide1_text">
+      </div>
+    </article>
+
+    <!-- 2. 유튜브/블로그 컨텐츠 -->
+    <section class="media_con">
+      <div class="media_box">
+      <article class="media_you">
+        <p>책보다 재미있는 책 이야기<br><span>민음사 YOUTUBE</span></p>
+        <iframe src="https://www.youtube.com/embed/-OHi4bBC7YQ?si=CZ8OZfjBvFiUPmxJ" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </article>
+
+      <!-- 블로그 -->
+      <article class="media_blg">
+        <p>대한민국 출판의 힘, 민음사<br><span>민음사 BLOG</span></p>
+        <a href="https://blog.naver.com/minumworld/223326119685" title="민음사 블로그">
+          <img src="./img/blog_img01.png" alt="민음사 블로그 이미지" id="blg_img">
+        </a>
+      </article>
+      </div>
+    </section>
+
+    <!-- 3. 탭콘텐츠 -->
+    <section class="tab_con">
+      <article>
+        <h2>신간/베스트</h2>
+        <ul class="tab_con_wrap">
+
+          <li class="new">
+            <a href="#" title="신간" class="t_act">신간</a>
+            <div class="cont">
+              <ul> <!-- 책 -->
+                <li> <!-- 신간1 -->
+                  <a href="#" title="newbook1"><img src="./img/new_book01.png" alt="new_book"></a>
+                  <p class="book_title">프라이드 그린 토마토</p>
+                  <p class="book_write"><span>글</span>패니 플래그&nbsp;&#x007C;&nbsp;<span>옮김</span>김후자</p>
+                  <p class="book_text">&#x300A;페미니스타&#x300B;가 뽑은 ‘20세기 100대 영문 소설’ 36주간 &#x300A;뉴욕 타임스&#x300B; 베스트셀러 기록 영화 &#x300C;프라이드 그린 토마토&#x300D;의 원작 소설</p>
+                </li>
+
+                <li> <!-- 신간2 -->
+                  <a href="#" title="newbook2"><img src="./img/new_book02.png" alt="new_book"></a>
+                  <p class="book_title">라이프 이즈 하드 Life is Hard</p>
+                  <p class="book_write"><span>글</span>키어런 세티야&nbsp;&#x007C;&nbsp;<span>옮김</span>연아람</p>
+                  <p class="book_text">우리는 삶에서 가장 좋은 것에 주목하도록 강권하는 전통을 물려받았지만 인생이 고되다는 사실을 뼈저리게 잘 알고 있다</p>
+                </li>
+
+                <li> <!-- 신간3 -->
+                  <a href="#" title="newbook3"><img src="./img/new_book03.png" alt="new_book"></a>
+                  <p class="book_title">하버드-C.H.베크 세계사 600 이전</p>
+                  <p class="book_write"><span>엮음</span>한스요아힘 게르케&nbsp;&#x007C;&nbsp;<span>옮김</span>이현주, 서종민</p>
+                  <p class="book_text">‘하버드-C.H.베크 세계사’는 미국의 하버드 대학 출판부와 독일의 출판 명가인 C.H.베크(체하베크) 출판사가 함께 펴내는 역사 시리즈</p>
+                </li>
+
+                <li> <!-- 신간4 -->
+                  <a href="#" title="newbook4"><img src="./img/new_book04.png" alt="new_book"></a>
+                  <p class="book_title">발견과 확산: 지역, 매체, 장르 그리고 독자</p>
+                  <p class="book_write"><span>글</span>우찬제</p>
+                  <p class="book_text">탄생 100년을 맞는 작가들의 문학적 업적과 생애를 객관적으로 조명하고 정리하여 우리 문학의 진로를 모색한다</p>
+                </li>
+
+                <li> <!-- 신간5 -->
+                  <a href="#" title="newbook1"><img src="./img/new_book05.png" alt="new_book"></a>
+                  <p class="book_title">귀신들의 땅</p>
+                  <p class="book_write"><span>글</span>천쓰홍&nbsp;&#x007C;&nbsp;<span>옮김</span>김태성</p>
+                  <p class="book_text">2020년 타이완 양대 문학상인 금장상金鼎賞 문학도서부문상, 금전상金典賞 연도백만대상 수상작!</p>
+                </li>
+
+                <li> <!-- 신간6 -->
+                  <a href="#" title="newbook2"><img src="./img/new_book06.png" alt="new_book"></a>
+                  <p class="book_title">캔터베리 이야기 1</p>
+                  <p class="book_write"><span>글</span>제프리 초서&nbsp;&#x007C;&nbsp;<span>옮김</span>이동일, 이동춘</p>
+                  <p class="book_text">‘영시의 아버지’, 중세 영어의 초석을 다진 위대한 작가 제프리 초서. 캔터베리 사원으로 성지 순례를 떠나는 순례자들이 벌이는 ‘이야기 향연’.</p>
+                </li>
+
+                <li> <!-- 신간7 -->
+                  <a href="#" title="newbook3"><img src="./img/new_book07.png" alt="new_book"></a>
+                  <p class="book_title">캔터베리 이야기 2</p>
+                  <p class="book_write"><span>글</span>제프리 초서&nbsp;&#x007C;&nbsp;<span>옮김</span>이동일, 이동춘</p>
+                  <p class="book_text">‘영시의 아버지’, 중세 영어의 초석을 다진 위대한 작가 제프리 초서. 캔터베리 사원으로 성지 순례를 떠나는 순례자들이 벌이는 ‘이야기 향연’</p>
+                </li>
+
+                <li> <!-- 신간8 -->
+                  <a href="#" title="newbook4"><img src="./img/new_book08.png" alt="new_book"></a>
+                  <p class="book_title">미들마치 1</p>
+                  <p class="book_write"><span>글</span>조지 엘리엇</p>
+                  <p class="book_text">로맨스 소설이 비워둔 결혼 전후의 관계를 본격적으로 파헤친 조지 엘리엇의 대표작. 빅토리아 시대를 총체적으로 담아낸 최고의 풍경화!</p>
+                </li>
+
+                <li> <!-- 신간9 -->
+                  <a href="#" title="newbook3"><img src="./img/new_book09.png" alt="new_book"></a>
+                  <p class="book_title">미들마치 2</p>
+                  <p class="book_write"><span>글</span>조지 엘리엇</p>
+                  <p class="book_text">로맨스 소설이 비워둔 결혼 전후의 관계를 본격적으로 파헤친 조지 엘리엇의 대표작. 빅토리아 시대를 총체적으로 담아낸 최고의 풍경화!</p>
+                </li>
+
+                <li> <!-- 신간10 -->
+                  <a href="#" title="newbook4"><img src="./img/new_book10.png" alt="new_book"></a>
+                  <p class="book_title">발견과 확산: 지역, 매체, 장르 그리고 독자</p>
+                  <p class="book_write"><span>글</span>프리드리히 실러&nbsp;&#x007C;&nbsp;<span>옮김</span>홍성광</p>
+                  <p class="book_text">독일 ‘질풍노도 운동’ 시기를 대표하는 작가 실러의 문제작 &#x300E;도적들&#x300F;이 민음사 세계문학전집으로 출간되었다.</p>
+                </li>
+              </ul>
+
+              <div class="new_ctrl_btn">
+                <span class="c_btn c_act">&nbsp;</span>
+                <span class="c_btn">&nbsp;</span>
+                <span class="c_btn">&nbsp;</span>
+                <span class="c_btn">&nbsp;</span>
+                <span class="c_btn">&nbsp;</span>
+                <span class="c_btn">&nbsp;</span>
+                <span class="c_btn">&nbsp;</span>
+                <span class="c_btn">&nbsp;</span>
+                <span class="c_btn">&nbsp;</span>
+                <span class="c_btn">&nbsp;</span>
+              </div>
+            </div>
+          </li>
+
+          <li class="best">
+            <a href="#" title="베스트">베스트</a>
+            <div class="cont">
+              <ul> <!-- 책 -->
+                <li> <!-- 베스트1 -->
+                  <a href="#" title="newbook1"><img src="./img/best_book01.png" alt="best_book"></a>
+                  <p class="book_title">데미안</p>
+                  <p class="book_write"><span>글</span>헤르만 헤세&nbsp;&#x007C;&nbsp;<span>옮김</span>전영애</p>
+                  <p class="book_text">“새는 알에서 나오려고 투쟁한다. 알은 세계이다. 태어나려는 자는 하나의 세계를 깨뜨려야 한다.” </p>
+                </li>
+
+                <li> <!-- 베스트2 -->
+                  <a href="#" title="newbook2"><img src="./img/best_book02.png" alt="best_book"></a>
+                  <p class="book_title">1984</p>
+                  <p class="book_write"><span>글</span>조지 오웰&nbsp;&#x007C;&nbsp;<span>옮김</span>정회성</p>
+                  <p class="book_text">21세기, 고도의 정보사회에 던지는 조지 오웰의 경고. 거대한 지배 체제하에 놓인 개인이 어떻게 저항하고 어떻게 파멸해 가는가를 적나라하게 보여 주는 디스토피아 소설</p>
+                </li>
+
+                <li> <!-- 베스트3 -->
+                  <a href="#" title="newbook3"><img src="./img/best_book03.png" alt="best_book"></a>설국</p>
+                  <p class="book_write"><span>글</span>가와바타 야스나리&nbsp;&#x007C;&nbsp;<span>옮김</span>유숙자</p>
+                  <p class="book_text">동양적 미의 정수를 보여준 노벨문학상 수상작.전세계인들의 감탄을 자아낸 눈 덮인 니가타 지방의 아름다운 정경.</p>
+                </li>
+
+                <li> <!-- 베스트4 -->
+                  <a href="#" title="newbook4"><img src="./img/best_book04.png" alt="best_book"></a>
+                  <p class="book_title">참을 수 없는 존재의 가벼움</p>
+                  <p class="book_write"><span>글</span>밀란 쿤데라&nbsp;&#x007C;&nbsp;<span>옮김</span>이재룡</p>
+                  <p class="book_text">‘참을 수 없는’ 생의 가벼움과 무거움을 오가는 우리들의 자화상</p>
+                </li>
+
+                <li> <!-- 베스트5 -->
+                  <a href="#" title="newbook1"><img src="./img/best_book05.png" alt="best_book"></a>
+                  <p class="book_title">동물농장</p>
+                  <p class="book_write"><span>글</span>조지 오웰&nbsp;&#x007C;&nbsp;<span>옮김</span>도정일</p>
+                  <p class="book_text">정치권력을 부패시키는 근본적 위험과 모순에 대한 빼어난 우화, 문학의 사회 비판적 역할에 대한 고민이 담긴 위대한 풍자소설</p>
+                </li>
+
+                <li> <!-- 베스트6 -->
+                  <a href="#" title="newbook2"><img src="./img/best_book06.png" alt="best_book"></a>
+                  <p class="book_title">이방인</p>
+                  <p class="book_write"><span>글</span>알베르 카뮈&nbsp;&#x007C;&nbsp;<span>옮김</span>김화영</p>
+                  <p class="book_text">20세기의 지성이자 실존주의 문학의 대표 작가, 알베르 카뮈억압적인 관습과 부조리를 고발하며 영원한 신화의 반열에 오른 작품</p>
+                </li>
+
+                <li> <!-- 베스트7 -->
+                  <a href="#" title="newbook3"><img src="./img/best_book07.png" alt="best_book"></a>
+                  <p class="book_title">오만과 편견</p>
+                  <p class="book_write"><span>글</span>제프리 초서&nbsp;&#x007C;&nbsp;<span>옮김</span>이동일, 이동춘</p>
+                  <p class="book_text">제인 오스틴의 예리하고 풍자적인 묘사와 섬세한 감각의 코미디</p>
+                </li>
+
+                <li> <!-- 베스트8 -->
+                  <a href="#" title="newbook4"><img src="./img/best_book08.png" alt="best_book"></a>
+                  <p class="book_title">호밀밭의 파수꾼</p>
+                  <p class="book_write"><span>글</span>제롬 데이비드 샐린저&nbsp;&#x007C;&nbsp;<span>옮김</span>정영목</p>
+                  <p class="book_text">랜덤하우스 선정 20세기 100대 영문학 작품, 미국 도서관 최다 대출을 기록한 베스트셀러</p>
+                </li>
+
+                <li> <!-- 베스트9 -->
+                  <a href="#" title="newbook3"><img src="./img/best_book09.png" alt="best_book"></a>
+                  <p class="book_title">색채가 없는 다자키 쓰쿠루와 그가 순례를 떠난 해</p>
+                  <p class="book_write"><span>글</span>무라카미 하루키&nbsp;&#x007C;&nbsp;<span>옮김</span>양억관</p>
+                  <p class="book_text">지금, 당신은 어느 역에 서 있습니까? 모든 것이 완벽했던 스무 살 여름으로 서른여섯 살 다자키 쓰쿠루는 순례를 시작했다</p>
+                </li>
+
+                <li> <!-- 베스트10 -->
+                  <a href="#" title="newbook4"><img src="./img/best_book10.png" alt="best_book"></a>
+                  <p class="book_title">한국이 싫어서</p>
+                  <p class="book_write"><span>글</span>장강명</p>
+                  <p class="book_text">한국에서의 익숙한 불행보다 호주에서의 낯선 행복을 택한 노마드 청춘의 등장, 거침없는 수다로 한국 사회의 폐부를 드러내는 글로벌 세대의 ‘문제적’ 행복론</p>
+                </li>
+              </ul>
+
+              <div class="new_ctrl_btn">
+                <span class="c_btn c_act">&nbsp;</span>
+                <span class="c_btn">&nbsp;</span>
+                <span class="c_btn">&nbsp;</span>
+                <span class="c_btn">&nbsp;</span>
+                <span class="c_btn">&nbsp;</span>
+                <span class="c_btn">&nbsp;</span>
+                <span class="c_btn">&nbsp;</span>
+                <span class="c_btn">&nbsp;</span>
+                <span class="c_btn">&nbsp;</span>
+                <span class="c_btn">&nbsp;</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- 4. 북클럽 / 북샵 -->
+    <section class="book_s">
+      <img src="./img/bookshop.png" alt="bookshop">
+      <p>독서에 유용한 상품이 모여 있는 <span class="text_blue">온라인 마켓</span><br><span class="text_title">민음북샵</span></p>
+      <div class="book_sbox"></div>
+      <input type="button" value="북샵 가기">
+    </section>
+
+    <section class="book_o">
+      <img src="./img/bookorder.png" alt="bookorder">
+      <p>민음사와 함께하는 동네서점 <span class="text_blue">파트너를 위한 공간</span><br><span class="text_title">동네서점</span></p>
+      <div class="book_obox"></div>
+      <input type="button" value="동네서점 가기">
+    </section>
+
+
+    <!-- 5.  이벤트 -->
+    <section class="event">
+      <h2>민음사 멤버십</h2>
+      <article class="e_slide">
+        <div class="es_wrap">
+
+          <div>
+            <a href="#" title="민음북클럽"><img src="./img/mamber.jpg" alt="민음북클럽">
+              <div class="e_txt">
+              <h3>민음북클럽</h3>
+              <p>매년 달라지는 특별한 북클럽 멤버십</p>
+              </div>
+            </a>
+          </div>
+
+          <div>
+            <a href="#" title="릿터"><img src="./img/littor.jpg" alt="릿터">
+              <div class="e_txt">
+              <h3>Littor (릿터)</h3>
+              <p>민음사 격월간 문학잡지 &#x300C; 𝐋𝐢𝐭𝐭𝐨𝐫 &#x300D;<br>쓰는 존재와 읽는 당신 사이, 삶의 틈을 문학으로 채우다<br>@minumsa_littor</p>
+              </div>
+            </a>
+          </div>
+
+          <div>
+            <a href="#" title="한편정기구독"><img src="./img/han.jpg" alt="한편정기구독">
+              <div class="e_txt"> 
+              <h3>한편 정기구독</h3>
+              <p>세로운 세대의 인문잡지 &#x300A;한편&#x300B;<br>책보다 짧고 논문보다 쉬운 한편의 인문학</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </article>
+      <i class="fas fa-angle-left"></i>
+      <i class="fas fa-angle-right"></i>
+    </section>
+
+
+    <!-- 6. 인스타그램 -->
+    <section class="instar">
+      <h2>민음사 INSTAGRAM
+        <br>
+        <span class="id_name">@minumsa_books</span>
+      </h2>
+
+      <ul class="gallery">
+        <li><a href="#" title="sns보기"><img src="./img/sns_img01.png" alt="사진"></a></li>
+        <li><a href="#" title="sns보기"><img src="./img/sns_img02.png" alt="사진"></a></li>
+        <li><a href="#" title="sns보기"><img src="./img/sns_img03.png" alt="사진"></a></li>
+        <li><a href="#" title="sns보기"><img src="./img/sns_img04.png" alt="사진"></a></li>
+        <li><a href="#" title="sns보기"><img src="./img/sns_img05.png" alt="사진"></a></li>
+        <li><a href="#" title="sns보기"><img src="./img/sns_img06.png" alt="사진"></a></li>
+        <li><a href="#" title="sns보기"><img src="./img/sns_img07.png" alt="사진"></a></li>
+        <li><a href="#" title="sns보기"><img src="./img/sns_img08.png" alt="사진"></a></li>
+        <li><a href="#" title="sns보기"><img src="./img/sns_img09.png" alt="사진"></a></li>
+      </ul>
+    </section>
+
+
+    <!-- top버튼 -->
+    <a href="#" title="위로 바로가기" class="t_btn">
+      <i class="fa-solid fa-angle-up"></i>
+    </a>
+
+  </main>
+
+
+
+  <!-- 푸터영역 시작 -->
+  <footer>
+    <div class="f_inner">
+      <nav>
+        <dl>
+          <dt><a href="#" title="민음사">민음사</a></dt>
+            <dd><a href="#" title="민음사">민음사</a></dd>
+            <dd><a href="#" title="채용정보">채용정보</a></dd>
+            <dd><a href="#" title="거래처">거래처</a></dd>
+            <dd><a href="#" title="오시는길">오시는길</a></dd>
+        </dl>
+
+        <dl>
+          <dt><a href="#" title="도서">도서</a></dt>
+            <dd><a href="#" title="전체도서">전체도서</a></dd>
+            <dd><a href="#" title="베스트셀러">베스트셀러</a></dd>
+            <dd><a href="#" title="전자책">전자책</a></dd>
+            <dd><a href="#" title="북캐스트">북캐스트</a></dd>
+        </dl>
+
+        <dl>
+          <dt><a href="#" title="문학상">문학상</a></dt>
+            <dd><a href="#" title="오늘의작가상">오늘의 작가상</a></dd>
+            <dd><a href="#" title="김수영문학상">김수영 문학상</a></dd>
+        </dl>
+
+        <dl>
+          <dt><a href="#" title="이벤트">이벤트</a></dt>
+          <dd><a href="#" title="동네서점">동네서점</a></dd>
+          <dd><a href="#" title="패밀리데이">패밀리데이</a></dd>
+          <dd><a href="#" title="e스템프">e스템프</a></dd>
+          <dd><a href="#" title="행사스케치">행사스케치</a></dd>
+        </dl>
+
+        <dl>
+          <dt><a href="#" title="멤버십">멤버십</a></dt>
+            <dd><a href="#" title="멤버십안내">멤버십안내</a></dd>
+            <dd><a href="#" title="민음북클럽">민음북클럽</a></dd>
+            <dd><a href="#" title="정기구독">정기구독</a></dd>
+            <dd><a href="#" title="민음커뮤니티">민음커뮤니티</a></dd>
+            <dd><a href="#" title="독서모임">독서모임</a></dd>
+        </dl>
+
+        <dl>
+          <dt><a href="#" title="소식">소식</a></dt>
+          <dd><a href="#" title="공지">공지</a></dd>
+          <dd><a href="#" title="자료실">자료실</a></dd>
+          <dd><a href="#" title="문의">문의</a></dd>
+        </dl>
+
+        <dl>
+          <dt><a href="#" title="북샵">북샵</a></dt>
+        </dl>
+
+        <dl class="sns">
+          <dt>Connect with us</dt>
+          <dd>
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-youtube"></i>
+          </dd>
+        </dl>
+      </nav>
+    </div>
+
+    <address>
+      <h2><a href="index.html" title="메인페이지로 바로가기"><img src="./img/minumsa_w.png" alt="하단로고"></a></h2>
+      <p>copyright&copy; 2024 MINUMSA. All Rights Reserved.</p>
+    </address>
+
+  </footer>
+
+  
+  <!-- 제이쿼리 라이브러리 -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <!-- 제이쿼리 쿠키 -->
+  <script src="./script/jquery.cookie.js"></script>
+  <!-- 제이쿼리 스크립트 -->
+  <script src="./script/minumsa.js"></script>
+</body>
+</html>
