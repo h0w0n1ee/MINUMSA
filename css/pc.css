@@ -25,7 +25,7 @@ header h1 img{width: 100%;}
 }
 .gnb > ul{display: flex;}
 .gnb > ul > li{
-  width: 81px;
+  width: 90px;
   text-align: center;
   margin: 0px 15px;
   position: relative;
@@ -61,6 +61,8 @@ header h1 img{width: 100%;}
 
   .gnb li:first-child .sub a, .gnb li:nth-child(2) .sub a{padding: 0px 10px;}
 
+  .gnb li:last-child, .gnb li:nth-child(8){display: none;} /* 모바일 로그인/회원가입 버튼 */
+
 
 /* 로그인/회원가입 서식 */
 .lnb{position: absolute; top: 50px; right: 10%;}
@@ -71,6 +73,10 @@ header h1 img{width: 100%;}
 
 
 /* 검색폼 서식 */
+
+/* 모바일 검색폼 서식 */
+.gnb > #sear_btn, .gnb > a{display: none;}
+
 fieldset > .src_close_btn{display: none;} /* 검색폼 닫기 아이콘 */
 /* 검색어 입력창 */
 fieldset > #sear_btn{
@@ -78,14 +84,14 @@ fieldset > #sear_btn{
   background: none;
   width: 250px;
   position: absolute;
-  top: 50px; right: 25%;
+  top: 50px; right: 22%;
   padding: 5px 10px;
 }
 fieldset > #sear_btn:focus{outline: none;}
 /* 검색 아이콘 */
 fieldset > a > .fa-search{
   position: absolute;
-  top: 55px; right: 25.2%;
+  top: 55px; right: 23%;
 }
 fieldset > a > label > span{display: none;}
 
@@ -96,8 +102,8 @@ fieldset > a > label > span{display: none;}
 .visual{
   position: relative;
   height: 83vh;
-  overflow: hidden;
   background: #f1f1f1;
+  overflow: hidden;
 }
 .visual > h2{display: none;}
 .visual > div{
@@ -154,7 +160,7 @@ fieldset > a > label > span{display: none;}
 
 
 /* 3. 탭콘텐츠 (신간/베스트) */
-.tab_con{background: #fff;}
+.tab_con{background: #fff; overflow: hidden;}
 .tab_con article{
   width: 1280px; height: 730px;
   margin: 0px auto;
