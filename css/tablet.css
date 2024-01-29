@@ -108,7 +108,7 @@
     border: none; border-bottom: 1.5px solid #333;
     background: none;
   }
-  fieldset > a > .fa-search{
+  fieldset > p > .fa-search{
     position: absolute;
     top: 55%; left: 61%;
     font-size: 1rem;
@@ -116,7 +116,12 @@
   fieldset > .src_close_btn, fieldset > a > .fa-search > span{display: none;}
 
   /* 모바일 */
-  .gnb label > i.fa-xmark, .gnb a > label.fa-search, .gnb input[type="search"], .gnb a > label > span, .gnb > ul > li:nth-child(8), .gnb > ul > li:last-child{display: none;}
+  .gnb label > i.fa-xmark, .gnb a > label.fa-search, .gnb input[type="search"], .gnb a > label > span, .gnb > ul > li:nth-child(8), .gnb > ul > li:last-child, .gnb > .inner_btn > a.fa-search{display: none;}
+
+  header > fieldset > a.fa-search{
+    position: absolute; top: 55%; left: 60%;
+    font-size: 1rem;
+  }
 
   
   
@@ -434,8 +439,8 @@
     display: flex; justify-content: space-between;
     height: 70px;
   }
-  address h2{width: 100px; padding: 10px 0px 0px 5%;}
-  address h2 img{width: 100%;}
+  address > .f_logo{width: 100px; padding: 10px 0px 0px 5%;}
+  address > .f_logo > a > img{width: 100%;}
   address p{padding-right: 3%; line-height: 70px;}
   
     /* top 서식 */

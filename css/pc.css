@@ -75,7 +75,7 @@ header h1 img{width: 100%;}
 /* 검색폼 서식 */
 
 /* 모바일 검색폼 서식 */
-.gnb > #sear_btn, .gnb > a{display: none;}
+.gnb > #sear_btn_inner, .gnb > a{display: none;}
 
 fieldset > .src_close_btn{display: none;} /* 검색폼 닫기 아이콘 */
 /* 검색어 입력창 */
@@ -93,7 +93,12 @@ fieldset > a > .fa-search{
   position: absolute;
   top: 55px; right: 23%;
 }
-fieldset > a > label > span{display: none;}
+fieldset > a > label > span, .gnb > .inner_btn > a.fa-search{display: none;}
+
+header > fieldset > p > a.fa-search{
+  position: absolute; top: 35%; right: 22.5%;
+  font-size: 1rem;
+}
 
 
 
@@ -415,8 +420,8 @@ address{
   display: flex; justify-content: space-between;
   height: 70px;
 }
-address h2{width: 100px; padding: 10px 0px 0px 5%;}
-address h2 img{width: 100%;}
+address > .f_logo{width: 100px; padding: 10px 0px 0px 5%;}
+address > .f_logo > a > img{width: 100%;}
 address p{padding-right: 3%; line-height: 70px;}
 
   /* top 서식 */

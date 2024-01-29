@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
+  
+<meta name="viewport" content="width=device-width">
   
   <title>민음사</title>
   <!-- 0. 파비콘 -->
@@ -119,11 +120,12 @@
         </li>
       </ul>
 
-      <input type="search" id="sear_btn" placeholder="검색어를 입력하세요">
-      <a href="#" title="검색">
-        <label for="sear_btn" class="fas fa-search"><span>검색버튼</span></label>
-      </a>
-    </fieldset>
+      <input type="search" id="sear_btn_inner" placeholder="검색어를 입력하세요">
+
+      <div class="inner_btn">
+        <a href="#" class="fas fa-search"></a>
+      </div>
+
     </nav>
 
     <!-- 로그인/회원가입 (lnb) -->
@@ -140,10 +142,11 @@
       <!-- 검색폼 닫기 버튼 -->
       <label for="sear_btn" class="src_close_btn"><i class="fa-solid fa-xmark"></i></label>
 
+      <!-- 검색어 입력창 -->
       <input type="search" id="sear_btn" placeholder="검색어를 입력하세요">
-      <a href="#" title="검색">
-        <label for="sear_btn" class="fas fa-search"><span>검색버튼</span></label>
-      </a>
+
+      <!-- 돋보기 -->
+      <p><a href="#" class="fas fa-search"></a></p>
     </fieldset>
   </header>
   
@@ -294,7 +297,8 @@
                 </li>
 
                 <li> <!-- 베스트3 -->
-                  <a href="#" title="newbook3"><img src="./img/best_book03.png" alt="best_book"></a>설국</p>
+                  <a href="#" title="newbook3"><img src="./img/best_book03.png" alt="best_book"></a>
+                  <p class="book_title">설국</p>
                   <p class="book_write"><span>글</span>가와바타 야스나리&nbsp;&#x007C;&nbsp;<span>옮김</span>유숙자</p>
                   <p class="book_text">동양적 미의 정수를 보여준 노벨문학상 수상작.전세계인들의 감탄을 자아낸 눈 덮인 니가타 지방의 아름다운 정경.</p>
                 </li>
@@ -506,6 +510,7 @@
 
         <dl>
           <dt><a href="#" title="북샵">북샵</a></dt>
+          <dd></dd>
         </dl>
 
         <dl class="sns">
@@ -521,7 +526,10 @@
     </div>
 
     <address>
-      <h2><a href="index.html" title="메인페이지로 바로가기"><img src="./img/minumsa_w.png" alt="하단로고"></a></h2>
+      <div class="f_logo">
+        <a href="index.html" title="메인페이지로 바로가기"><img src="./img/minumsa_w.png" alt="하단로고"></a>
+      </div>
+
       <p>copyright&copy; 2024 MINUMSA. All Rights Reserved.</p>
     </address>
 

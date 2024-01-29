@@ -46,7 +46,7 @@
     bottom: 23px !important;
     right:7px;
   }
-  .bgcolor{background:rgba(18, 18, 18,.8) !important};
+  .bgcolor{background:rgba(18, 18, 18,.8) !important}
 
 
 
@@ -109,7 +109,11 @@
     position: absolute; left:10%; top: 105%;
     margin: 0px auto; padding: 10px;
   }
-  .gnb a > label > span{display: none;}
+  .gnb > .inner_btn > a.fa-search{
+    font-size: 1rem; padding: 10px; border: 1px solid #333; border-radius: 50px;
+    position: absolute; top: 105%; right: 5%;
+  }
+  header > fieldset > a.fa-search{display: none;}
 
 
   /* pc 회원가입 로그인 */
@@ -385,7 +389,7 @@
   .modal{
     position: fixed; top: 0px;
     width: 100%; height: 100%;
-    background: rgba(266,266,266,.5);
+    background: rgba(255,255,255,.5);
     z-index: 9999;
   }
   .modal > .banner{
@@ -457,8 +461,8 @@
     display: flex; justify-content: space-between;
     height: 70px;
   }
-  address h2{width: 100px; padding: 10px 0px 0px 5%;}
-  address h2 img{width: 100%;}
+  address > .f_logo{width: 100px; padding: 10px 0px 0px 5%;}
+  address > .f_logo > a > img{width: 100%;}
   address p{padding-right: 3%; line-height: 70px;}
   
   /* top 서식 */
@@ -470,10 +474,4 @@
     display: none;
     z-index: 999;
   }
-
-
-
-
-
-
 }

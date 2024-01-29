@@ -10,7 +10,7 @@ $(document).ready(function(){
   });
 
   $('main').click(function(){ // 메인 클릭 시, 서브 숨기기
-    $('.sub').hide();
+    $('.sub').show();
   });
 
     // 모바일 토글버튼 모양 변경
