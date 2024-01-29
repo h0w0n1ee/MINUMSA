@@ -108,7 +108,7 @@ $(document).ready(function(){
 
   //moveleft함수
   function moveLeft(){
-    eslide.animate({'margin-left':'-240%'},500, function(){
+    eslide.animate({'margin-left':'-230%'},500, function(){
       $('.es_wrap > div:first-child').insertAfter('.es_wrap > div:last-child');
       eslide.css('margin-left','-120%');
     });

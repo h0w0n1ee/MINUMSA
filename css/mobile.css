@@ -126,7 +126,7 @@
   /* 1. 메인 슬라이드 서식 */
   .visual{
     position: relative;
-    height: 75vh;
+    height: 60vh;
     overflow: hidden;
     background: #f1f1f1;
   }
@@ -150,9 +150,8 @@
   }
   .visual > .slide1 > img{position: absolute;}
   .visual > .slide1 > .slide1_book{ /* 책 */
-    width: 150%;
+    width: 120%;
     position: absolute; top: 120px; left: -50px;
-    transform: rotate(-20deg);
     z-index: 1;
   }
   .visual > .slide1 > .slide1_text{ /* 텍스트 */
@@ -316,6 +315,7 @@
     width:100%;
     margin:100px auto;
     position:relative;
+    overflow-x: hidden;
   }
   .event > h2{
     font-size:23px; font-weight:bold;
@@ -324,7 +324,7 @@
   }
   .e_slide{
     display:flex; position:relative;
-    overflow:hidden;
+    overflow-x: hidden;
   }
   /* 이미지 슬라이드 */
   .es_wrap{display:flex; width:340%;}
@@ -334,7 +334,7 @@
   }
   .es_wrap div a img{border-radius: 10px;}
   .es_wrap div a{text-align: center;}
-  .es_wrap div a div{text-align: left;}
+  .es_wrap div a div{width: 100%; text-align: left;}
   .event > .e_slide > .es_wrap > div > a > .e_txt > p{line-height: 30px;}
   .event i.fas{
     position:absolute;

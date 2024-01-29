@@ -293,7 +293,7 @@ header > fieldset > p > a.fa-search{
   position:relative;
   overflow:hidden;
 }
-.es_wrap{display:flex;width:3600px;}
+.es_wrap{display:flex; width:3600px;}
 .es_wrap div{width:1200px;}
 .es_wrap div a img{border-radius: 10px;}
 .event > .e_slide > .es_wrap > div > a > .e_txt > p{line-height: 30px;}
