@@ -4,7 +4,7 @@
   header{
     position:relative;
     background: #f1f1f1;
-    width:100%; z-index: 100;
+    width:100%; height: 70px; z-index: 100;
   }
   header h1{
 		top:20px; width:15%;
@@ -19,10 +19,9 @@
   /* ★ 모바일 햄버거 토글 ★ */
   #toggle{
     display:block;
-    background:#396ccc;
+    background:#396ccc; border-radius: 10px;
     padding:8px;
-    position: absolute;
-    right:3%;top:24px;
+    position: absolute; right:3%;top:24px;
     width:32px;height:32px;
     z-index: 1002;
   }
@@ -52,26 +51,30 @@
 
 
   /* ★ 모바일 내비게이션 서식 ★ */
-  header nav{
+  header .gnb{
     position:fixed;top:60px;
-    width:100%;height:100%;
+    width:100%; height:100%;
     z-index:1001;
-    display: none;
   }
   /* 메인메뉴 */
   .gnb{
-    width:100%;
-		padding-top:50px;
-    display:flex; flex-direction:column;
+    width:90%;
+    position: absolute;
+    right: 5%; top: 90px;
+    display:none;
     align-items:center;
-    display: none !important;
   }
-  .gnb > ul{width:90%;}
-  .gnb > li{text-align:center; position:relative;}
+  .gnb > ul{
+    width:100%;
+    display: block;
+    margin: 0px auto;
+    background: #fff;
+    border-radius: 30px;
+    box-shadow: 0px 0px 5px 0px #ccc;
+  }
   .gnb li a{
-    display: block;;
-    background:#fff;
-    line-height:260%;
+    display: block;
+    line-height:230%;
     font-size:1rem;
     text-align:center;
   }
@@ -82,8 +85,35 @@
     width:90%;left:5%;
     box-shadow: 0px 3px 2px #ccc;
     border:1px solid #ccc;
+    z-index: 100;
   }
   .sub li a{background:#e8e8e8;}
+  .sub li a{background: #e8e8e8;}
+
+  /* pc 검색폼 */
+  fieldset{display: none;}
+
+  /* 검색폼 */
+  .gnb label > i.fa-xmark{display: none;}
+  .gnb a > label.fa-search{
+    border: 1px solid #333; border-radius: 50px;
+    padding: 10px;
+    font-size: 1rem;
+    position: absolute;
+    top: 105%; right: 9%;
+  }
+  .gnb input[type="search"]{
+    width: 70%;
+    border: 1px solid #979797; border-radius: 5px;
+    text-align: center;
+    position: absolute; left:10%; top: 105%;
+    margin: 0px auto; padding: 10px;
+  }
+  .gnb a > label > span{display: none;}
+
+
+  /* pc 회원가입 로그인 */
+  nav.lnb > ul{display: none;}
 
 
 
@@ -110,17 +140,14 @@
     z-index: 2;
   }
   .visual > div > p > span{ /* 삶의 틈을 문학으로 채우다 */
-    font-size: 2rem; color: #fff;
-    background: #333;
-    padding: 0px 10px;
+    font-size: 1.8rem; color: #fff; background: #333;
     font-weight: bold;
     line-height: 60px;
   }
   .visual > .slide1 > img{position: absolute;}
   .visual > .slide1 > .slide1_book{ /* 책 */
     width: 150%;
-    position: absolute;
-    top: 120px; left: -50px;
+    position: absolute; top: 120px; left: -50px;
     transform: rotate(-20deg);
     z-index: 1;
   }
@@ -179,7 +206,7 @@
   /* 슬라이드 */
   
   .cont{
-    height: 600px;
+    height: 500px;
     position:absolute;
     /* border: 1px solid #f00; */
     width: 100%; left:20px; top:90px;
@@ -195,7 +222,6 @@
     justify-content: space-around;
     position: absolute;left:0px;
     transform: translateY(10px);
-  
     /* border: 2px solid #00f; */
   }
   .cont > ul > li{width: 240px; margin: 30px; position: relative;}
@@ -228,19 +254,28 @@
   /* 4. 북클럽 / 북샵 서식 */
   .book_s, .book_o{
     background: #D6D6D7;
-    width: 100%; height: 425px;
+    width: 100%; height: 250px;
     text-align: center;
     position: relative;
   }
   .book_o{margin-top: 5px;}
   .book_s > img, .book_o > img{width: 200%; position: absolute;}
-  .book_s > img{top: 0px; left: -200px;}
-  .book_o > img{top: 0px; left: -170px;}
+  .book_s > img{
+    top: 0px; left: -200px;
+    display: none;
+  }
+  .book_o > img{
+    top: 0px; left: -170px;
+    display: none;
+  }
+  .book_s .book_img_m > img, .book_o .book_img_m > img{
+    width: 100%;
+  }
 
   .book_s > p, .book_o > p{
     position: absolute;
     font-size: 0.9rem;
-    line-height: 50px;
+    line-height: 25px;
   }
   .book_s > p{
     top: 20%; left: 10%;
@@ -249,11 +284,6 @@
   .book_o > p{
     top: 40%; right: 5%;
     text-align: right;
-  }
-  .book_sbox, .book_obox{
-    position: absolute;
-    width: 260px;
-    border-bottom: 1px solid #ccc;
   }
   .book_sbox{top: 31%; left: 10%;}
   .book_obox{top: 51%; right: 5%;}
@@ -340,7 +370,6 @@
   
   .gallery > li{overflow: hidden;}
   .gallery{
-    width: 100%;
     margin: 0px auto; padding: 10px;
     display: grid;
     grid-gap: 5px;

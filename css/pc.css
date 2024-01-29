@@ -269,6 +269,7 @@ fieldset > a > label > span{display: none;}
   border:1px solid #333; background: #fff; color: #333;
   font-weight: bold;
 }
+.book_s .book_img_m, .book_o .book_img_m{display: none;}
 .book_o > input{top: 69%; right: 31.9%;}
 
 

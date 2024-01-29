@@ -22,6 +22,49 @@ $(document).ready(function(){
       $('header nav').toggle();
     }); 
 
+    tab_mnu.click(function(){
+
+      // 만약에 pc 해상도라면?
+      if($(window).width()>=768){
+        $(this).next().show().parent().siblings().find('div').hide();
+        $(this).addClass('act').parent().siblings().find('a').removeClass('act');
+    
+        // **탭메뉴 모바일 서식**
+        $(this).find('i.fas').addClass('act01').parent().parent().siblings().find('i.fas').removeClass('act01');
+    
+        //li태그의 인덱스 번호를 구하여
+        const i = $(this).parent().index();
+        console.log(i);
+        //만약 인덱스가 2라면(3번째 li태그)
+        if(i==2){
+          //부모박스 높이를 키우고
+          $('.tab_con article').height(800);
+        }else{
+          //그렇지 않으면(0,1일때) 원래높이로 설정함.
+          $('.tab_con article').height(500);
+        }
+      }else{
+        $(this).next().slideDown().parent().siblings().find('div').slideUp();
+        $(this).addClass('act').parent().siblings().find('a').removeClass('act');
+    
+        // **탭메뉴 모바일 서식**
+        $(this).find('i.fas').addClass('act01').parent().parent().siblings().find('i.fas').removeClass('act01');
+    
+        //li태그의 인덱스 번호를 구하여
+        const i = $(this).parent().index();
+        console.log(i);
+        //만약 인덱스가 2라면(3번째 li태그)
+        if(i==2){
+          //부모박스 높이를 키우고
+          $('.tab_con article').height(1200);
+        }else{
+          //그렇지 않으면(0,1일때) 원래높이로 설정함.
+          $('.tab_con article').height(830);
+        }
+      }
+      return false;
+    });
+
 
     // **********
 

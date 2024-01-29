@@ -107,7 +107,21 @@
         <li> <!-- 북샵 -->
           <a href="#" title="북 샵">북 샵</a>
         </li>
+
+        <li> <!-- 로그인 -->
+          <a href="#" title="로그인">로그인</a>
+        </li>
+        
+        <li> <!-- 회원가입 -->
+          <a href="#" title="회원가입">회원가입</a>
+        </li>
       </ul>
+
+      <input type="search" id="sear_btn" placeholder="검색어를 입력하세요">
+      <a href="#" title="검색">
+        <label for="sear_btn" class="fas fa-search"><span>검색버튼</span></label>
+      </a>
+    </fieldset>
     </nav>
 
     <!-- 로그인/회원가입 (lnb) -->
@@ -149,7 +163,7 @@
       <div class="media_box">
       <article class="media_you">
         <p>책보다 재미있는 책 이야기<br><span>민음사 YOUTUBE</span></p>
-        <iframe src="https://www.youtube.com/embed/-OHi4bBC7YQ?si=CZ8OZfjBvFiUPmxJ" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/-OHi4bBC7YQ?si=CZ8OZfjBvFiUPmxJ" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen id="yourl"></iframe>
       </article>
 
       <!-- 블로그 -->
@@ -353,15 +367,16 @@
     <!-- 4. 북클럽 / 북샵 -->
     <section class="book_s">
       <img src="./img/bookshop.png" alt="bookshop">
+      <div class="book_img_m"><img src="./img/bookshop_m.png" alt=""></div>
       <p>독서에 유용한 상품이 모여 있는 <span class="text_blue">온라인 마켓</span><br><span class="text_title">민음북샵</span></p>
-      <div class="book_sbox"></div>
       <input type="button" value="북샵 가기">
     </section>
 
     <section class="book_o">
       <img src="./img/bookorder.png" alt="bookorder">
+      <div class="book_img_m"><img src="./img/bookorder_m.png" alt=""></div>
+      <div class="book_img"></div>
       <p>민음사와 함께하는 동네서점 <span class="text_blue">파트너를 위한 공간</span><br><span class="text_title">동네서점</span></p>
-      <div class="book_obox"></div>
       <input type="button" value="동네서점 가기">
     </section>
 
