@@ -18,7 +18,7 @@ header h1 img{width: 100%;}
 
 
 
-/* 메인메뉴 서식 */
+/* ★ 메인메뉴 서식 ★ */
 .gnb{
   position: absolute;
   left: 17%; top: 40px;
@@ -252,13 +252,6 @@ fieldset > a > label > span{display: none;}
   top: 30%; right: 32%;
   text-align: right;
 }
-.book_sbox, .book_obox{
-  position: absolute;
-  width: 260px;
-  border-bottom: 1px solid #ccc;
-}
-.book_sbox{top: 36%; left: 30%;}
-.book_obox{top: 46%; right: 32%;}
 .book_s > p > .text_blue, .book_o > p > .text_blue{color: #396ccc;}
 .book_s > p > .text_title, .book_o > p > .text_title{font-size: 25px; font-weight: bold;}
 /* 버튼 */
@@ -275,7 +268,7 @@ fieldset > a > label > span{display: none;}
   border:1px solid #333; background: #fff; color: #333;
   font-weight: bold;
 }
-.book_s .book_img_m, .book_o .book_img_m{display: none;}
+.book_s .book_img_m, .book_o .book_img_m, .book_img_t{display: none;}
 .book_o > input{top: 69%; right: 31.9%;}
 
 

@@ -18,9 +18,18 @@ $(document).ready(function(){
       $('#toggle span:nth-child(2)').toggle();
       $('#toggle span:first-child').toggleClass('rotate1');
       $('#toggle span:last-child').toggleClass('rotate2');
-      $(this).toggleClass('bgcolor');
+
       $('header nav').toggle();
     }); 
+
+
+    // 태블릿 내비게이션
+    $(function(){
+      $('.gnb > ul > li > a').click(function(){
+        $('.gnb > ul > li > a').removeClass();
+          $(this).addClass('on');
+      });
+    });
 
 
     // **********

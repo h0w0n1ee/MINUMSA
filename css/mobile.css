@@ -304,6 +304,7 @@
     font-weight: bold;
   }
   .book_o > input{top: 65%; right: 5%;}
+  .book_img_t{display: none;}
   
   
   /* 5. 민음사 멤버십 슬라이드 서식 */
