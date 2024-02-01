@@ -65,9 +65,9 @@
     align-items:center;
   }
   .gnb > ul{
-    width:100%;
+    position: absolute; top: 30px; left: 10%;
+    width:90%;
     display: block;
-    margin: 0px auto;
     background: #fff;
     border-radius: 30px;
     box-shadow: 0px 0px 10px 0px #ccc;
