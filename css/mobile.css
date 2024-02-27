@@ -78,6 +78,7 @@
     font-size:1rem;
     text-align:center;
   }
+  .gnb ul li a i{margin-left: 5px;}
   /* 서브메뉴 */
   .sub{
     display:none;
@@ -241,13 +242,15 @@
   .cont > ul > li > .book_text{margin-top: 10px; color: #6D6D6D;}
   
   /* 컨트롤 */
+  .cont{height: 590px;}
   .new_ctrl_btn{
-    position: absolute; bottom: 20px;
+    position: absolute; bottom: 0px;
     width: 100%;
     text-align: center;
   }
   .c_btn{
-    width: 12px; height: 12px;
+    width: 15px; height: 15px;
+    margin: 0px 3px;
     display: inline-block;
     background: #D1D1D1; border-radius: 50%;
     cursor: pointer;
